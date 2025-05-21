@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Blog</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', sans-serif;
+      margin: 0;
+      background-image: url('lily.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    }
+
+    header, footer {
+      background-color: #FFCDB2;
+      color: #7C444F;
+      text-align: center;
+      padding: 10px;
+    }
+
+   .header-background {
+  background-image: url('munge.jpg'); 
+  background-size: cover;
+  background-position: center;
+  padding: 40px 10px;
+  border-radius: 10px;
+  color: #7C444F;
+    
+    }
+
+    nav {
+  background-image: url('pinkie.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+    }
+
+    nav a {
+      color: #8c3b3f;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+    color: #8c3b3f; 
+
+    }
+
+    nav a:hover {
+      background-color: #cf9b9d;
+    }
+
+    .section {
+      display: none;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background: #FEF9F2;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .bounce-sentence {
+      display: inline-block;
+      animation: fadeSlide 2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .image-row, .video-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .image-row img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    table {
+      width: 60%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      font-family: Times New Roman, sans-serif;
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    iframe {
+      margin-top: 30px;
+      width: 90%;
+      max-width: 400px;
+      border: none;
+    }
+
+    i.fab {
+      margin-right: 8px;
+      font-size: 18px;
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+  <div class="header-background">
+  <marquee behavior="scroll" direction="left" style="color:#7C444F; font-size: 28px; font-family: 'Times New Roman', serif;">
+    <h2>ʚɞ WELCOME TO LEYA'S BLOG ʚɞ</h2>
+  </marquee>
+  <h2>"Do something today that your future self will thank you for."</h2>
+ <!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</div>
+</header>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About Me</a>
+    <a href="#" onclick="showSection('places')">Dream Destination</a>
+    <a href="#" onclick="showSection('yt')">Fav Youtuber</a>
+    <a href="#" onclick="showSection('hobbies')">My Hobbies</a>
+    <a href="#" onclick="showSection('friends')">Friends</a>
+  </nav>
+
+  <!-- Home Section -->
+  <div id="home" class="section active">
+   <audio controls autoplay>
+      <source src="ag.ogg" type="audio/ogg">
+      <source src="ag.mp3" type="audio/mpeg">
+    </audio>
+    
+    <h1><span class="bounce-sentence">THE START OF SOMETHING NEW ✨</span></h1>
+     <div class="image-row">
+      <img src="leya3.jpg" alt="leya3">
+      <img src="home2.jpg" alt="home2">
+    </div>
+    <p>Welcome to my personal blog! Here I share my stories and interests.</p>
+    <p>My name is Nur Aleya Sofia Binti Zamri and I am a final year student of Diploma in Information Science at UiTM Merbok, Sungai Petani. This is my first time creating a personal website using HTML. I really hope you guys enjoy it!!</p>
+    
+    <h2>this month's proudest creation<3</h2>
+    <p>This month has been all about learning, creating, and pushing myself to try something new and I’m proud to say that this personal website is the result of that journey. I’ve spent the past few weeks exploring web design, writing about my interests, and figuring out how to express myself online in a fun and meaningful way. 
+       Every section, from the hobbies I enjoy to the memories I cherish with my friends, reflects a part of who I am. Building this site from scratch felt challenging at times, but it’s also been incredibly rewarding. Seeing it all come together is a small but meaningful success that I’m truly proud of.
+       I’ve put my heart into every detail, and I hope you enjoy looking through my website as much as I enjoyed creating it. Feel free to explore and get to know me better and if you’d like to see more of my daily life, thoughts, and little moments, you can also visit my social media! The link is below.</p>
+
+<p><a href="https://www.instagram.com/leyazamrii/" target="_blank" style="color:#7C444F; text-decoration:none;">
+    <i class="fab fa-instagram"></i> @leyazamrii </a></p>
+
+<p><a href="https://x.com/lileyy0/" target="_blank" style="color:#7C444F; text-decoration:none;">
+    <i class="fab fa-twitter"></i> @lileyy0 </a></p>
+
+<p><a href="https://www.tiktok.com/@sofieyy0" target="_blank" style="color:#7C444F; text-decoration:none;">
+    <i class="fab fa-tiktok"></i> @sofieyy0 </a></p>
+
+<p><a href="https://www.roblox.com/users/7953329602/profile" target="_blank" style="color:#7C444F; text-decoration:none;">
+    <i class="fas fa-gamepad"></i> @ley00o </a></p>
+  </div>
+
+  <!-- About Me Section -->
+  <div id="about" class="section">
+    <h1><span class="bounce-sentence">ABOUT ME౨ৎ ⋆｡˚</span></h1>
+    <h2>a glimpse into my life<3</h2>
+    <div class="image-row">
+      <img src="baby.jpg" alt="baby">
+      <img src="leya1.jpg" alt="leya1">
+    </div>
+    <table>
+      <caption>My Biodata</caption>
+      <tr><td>Full Name</td><td>Nur Aleya Sofia Zamri</td></tr>
+      <tr><td>Date of Birth</td><td>November 10, 2004</td></tr>
+      <tr><td>Nationality</td><td>Malaysian</td></tr>
+      <tr><td>Email</td><td>leyazamrii@gmail.com</td></tr>
+      <tr><td>State</td><td>Kedah</td></tr>
+    </table>
+    <p>Hi! My name is Nur Aleya Sofia Zamri, like being called Leya and I’m someone who loves to enjoy the little things in life. I consider myself a cheerful, curious, and caring person. 
+I enjoy spending my free time doing activities that bring me joy and help me grow, like playing with my pet hamster, exploring new foods with friends, and playing Roblox with my friends. 
+I’m always open to learning new things and meeting new people who share similar interests with me.</p>
+
+<h2>🏡 rooted in love: my family story<3</h2>
+<div class="image-row">
+      <img src="fam1.jpg" alt="fam1">
+      <img src="fam3.jpg" alt="fam3">
+      <img src="fam2.jpg" alt="fam2">
+    </div>
+
+  <p>I come from a loving and supportive family that means the world to me. I have 4 siblings which consists of me the only sister and 3 other little brothers. We enjoy spending time together, whether it’s having meals, celebrating special occasions, or simply relaxing at home. 
+     My family has taught me important values like respect, kindness, and patience. Their encouragement and presence have always been a big part of who I am today.</p>
+
+
+<h2>💌 more than just a chapter, he’s a big part of my book<3</h2>
+<div class="image-row">
+      <img src="boyfie1.jpg" alt="boyfie1">
+      <img src="boyfie2.jpg" alt="boyfie2">
+    </div>
+
+   <p>One of the most special people in my life is my boyfriend. He’s someone who always supports me, makes me laugh, and brings comfort during both good and tough times. 
+      We share many memorable moments together, from simple daily conversations to fun outings and little surprises. Having him by my side has added so much happiness and meaning to my life.
+      Hope for many more years together.</p>
+</div>
+
+  <!-- Dream Destination Section -->
+  <div id="places" class="section">
+    <h1><span class="bounce-sentence">PINNING MY DREAMS ON THE MAP౨ৎ ⋆｡˚</span></h1>
+    <h2>🏔️ Switzerland – a dream of Peace and Nature<3</h2>
+    <div class="image-row">
+      <img src="swiss1.jpg" alt="swiss1">
+      <img src="swiss2.jpg" alt="swiss2">
+      <img src="swiss3.jpg" alt="swiss3">
+    </div>
+
+    <p>Switzerland has always been at the top of my dream travel list. The country’s breathtaking landscapes, from snow-capped mountains to crystal-clear lakes and peaceful green valleys, seem like something out of a fairytale. 
+       I imagine myself walking through charming villages, riding scenic trains like the Glacier Express, and just breathing in the fresh, clean air. Switzerland feels like the perfect escape that feels calm, beautiful, and full of natural wonders. It’s a place where I can truly slow down, relax, and soak in the beauty of the world.</p>
+
+    <h2>🏰 Disneyland – where Magic comes to life<3</h2>
+    <div class="image-row">
+      <img src="disney1.jpg" alt="disney1">
+      <img src="disney2.jpg" alt="disney2">
+      <img src="disney3.jpg" alt="disney3">
+    </div>
+    
+    <p>Disneyland has been my childhood dream ever since I first saw the magical castles and beloved characters on screen. There’s something so joyful and nostalgic about the idea of being in a place where stories come alive. 
+       I want to experience the thrilling rides, watch the fireworks light up the night sky, and finally meet the characters that filled my imagination growing up. Disneyland isn’t just a theme park, it’s a place full of wonder, happiness, and memories waiting to be made.</p>
+
+    <h2>🎰 Las Vegas – the City that never sleeps<3</h2>
+    <div class="image-row">
+      <img src="lv1.jpg" alt="lv1">
+      <img src="lv2.jpg" alt="lv2">
+      <img src="lv3.jpg" alt="lv3">
+    </div>
+
+    <p>Las Vegas attracts me with its energy, excitement, and non-stop entertainment. The bright city lights, iconic hotels, and world-famous shows make it a destination like no other.
+       I’d love to explore the famous Strip, try out unique foods, and enjoy all the fun experiences the city has to offer from spectacular performances to dazzling attractions. Las Vegas feels like a place where you can be bold, spontaneous, and just live in the moment. 
+       It’s definitely on my bucket list for an unforgettable adventure!.</p>
+  </div>
+
+  <!-- Fav Youtuber Section -->
+  <div id="yt" class="section">
+    <h1><span class="bounce-sentence">LIGHTS, CAMERA, SUBSCRIBE౨ৎ ⋆｡˚</span></h1>
+    <h2>🧁 sprinkled with fun: Cupcake Aisyah on my screen<3</h2>
+    <div class="image-row">
+      <img src="ytca.jpg" alt="ytca">
+    </div>
+   <p><a href="https://www.youtube.com/@CupcakeAisyah/" target="_blank" style="color:#7C444F; text-decoration:none;">
+    <i class="fab fa-youtube"></i> @CupcakeAisyah </a></p>
+   
+   <p>One of my all-time favorite YouTubers is Cupcake Aisyah. I love how effortlessly she shares her daily life, whether it’s through cozy vlogs, shopping hauls, skincare tips, or just fun moments with her friends and family. 
+      Her content feels so real and relatable like catching up with a close friend. Aisyah’s soft aesthetic, chill personality, and cute editing style always brighten my mood. Watching her videos is my little escape when I need something relaxing and sweet, and she truly inspires me to enjoy the little things in life. That’s why her channel has become one of my comfort spaces on YouTube!</p>
+
+    <h2>📸 life through Leona’s lens<3</h2>
+    <div class="image-row">
+      <img src="ytln.jpg" alt="ytln">
+    </div>
+   <p><a href="https://www.youtube.com/@leona.a/" target="_blank" style="color:#7C444F; text-decoration:none;">
+    <i class="fab fa-youtube"></i> @leona.a </a></p>
+
+   <p>Leona has quickly become my favorite YouTuber because of how effortlessly she blends authenticity, warmth, and creativity in her content. Her vlogs offer a genuine glimpse into her life as a student abroad, capturing everything from spontaneous trips back to Malaysia to cozy weekends in Bath. 
+      What I love most is how she shares her experiences with such honesty whether it’s celebrating her birthday, tackling a 7-day fitness challenge, or simply enjoying time with her family during the holidays. Her videos feel like catching up with a close friend, full of laughter, heartfelt moments, and relatable everyday adventures.</p>
+
+
+   <h2>🎬 where confidence meets creativity<3</h2>
+    <div class="image-row">
+      <img src="ytah.jpg" alt="ah">
+    </div>
+   <p><a href="https://www.youtube.com/@AisyahHabshee/" target="_blank" style="color:#7C444F; text-decoration:none;">
+    <i class="fab fa-youtube"></i> @AisyahHabshee </a></p>
+    
+   <p>One of my favorite YouTubers is Aisyah Habshee, and watching her content has truly become part of my daily routine. I admire how genuine and confident she is in her vlogs from lifestyle updates to beauty, fashion, and daily activities, she shares it all with a fun and empowering vibe. What I love most is her confidence, stylish personality, and the way she stays real and unfiltered while still keeping things inspiring. 
+      Her content feels like a perfect blend of chill and classy, and she always motivates me to express myself more freely. That’s why Aisyah Habshee is definitely one of my top favorite creators on YouTube.</p>
+</div>
+
+
+
+ <!-- My Hobbies Section -->
+  <div id="hobbies" class="section">
+    <h1><span class="bounce-sentence">MY HAPPY PILLS౨ৎ ⋆｡˚</span></h1>
+    <h2>🐹 meet Hammy & Blacky<3</h2>
+    <div class="video-row">
+      <video width="320" height="240" controls>
+        <source src="hobies5.mp4" type="video/mp4">
+        <source src="hobies5.ogg" type="video/ogg">
+      </video>
+      <video width="320" height="240" controls>
+        <source src="hammy1.mp4" type="video/mp4">
+        <source src="hammy1.ogg" type="video/ogg">
+      </video>
+    </div>
+    <p>One of my favorite ways to unwind and relax is by spending quality time with my adorable pet hamster,Hammy & Blacky. Watching it scurry around its little habitat, explore tunnels, and nibble on tiny treats always brings a smile to my face. 
+       I enjoy creating fun mini-playgrounds and occasionally hand-feeding it, which makes our bond even stronger. Taking care of such a small yet lively creature has taught me patience and responsibility, while also bringing a lot of joy to my daily life.</p>
+
+    <h2>🍽️ food hunters<3</h2>
+    <div class="image-row">
+      <img src="food1.jpg" alt="food1">
+      <img src="makan2.jpg" alt="makan2">
+      <img src="makan3.jpg" alt="makan3">
+      <img src="makan4.jpg" alt="makan4">
+    </div>
+    <p>I absolutely love going on food hunting adventures with my friends, especially when we’re exploring new places or chasing down viral food spots. We enjoy discovering hidden eateries, trying out unique dishes, and sharing our thoughts on different flavors and experiences. 
+It’s not just about eating, it’s about the thrill of the hunt, the laughter over shared meals, and the memories we create along the way. These outings always bring us closer and keep our weekends full of excitement and tasty surprises.
+But our top tier favourite food will always be Ayam Gepuk Top Global.</p>
+
+    <h2>🎮🏸 game on! whether it’s badminton or Roblox<3</h2>
+    <div class="image-row">
+      <img src="hobies1.jpg" alt="hobies1">
+      <img src="hobies2.jpg" alt="hobies2">
+      <img src="hobies3.jpg" alt="hobies3">
+    </div>
+    <div class="video-row">
+      <video width="340" height="240" controls>
+        <source src="ton1.mp4" type="video/mp4">
+        <source src="ton1.ogg" type="video/ogg">
+      </video>
+      <video width="340" height="240" controls>
+        <source src="ton2.mp4" type="video/mp4">
+        <source src="ton2.ogg" type="video/ogg">
+      </video>
+    </div>
+    <p>During my free time, I like to balance both physical activity and relaxation by doing two of my favorite things, playing badminton and enjoying Roblox. Badminton helps me stay fit, sharp, and energized, especially when I’m having friendly matches with others. 
+       On the other hand, Roblox lets me explore a whole world of creativity and fun, whether I’m building, playing, or just hanging out with friends in the game. Both activities bring me joy in different ways and help me recharge after a busy day.</p>
+  </div>
+
+  <!-- Friends Section -->
+  <div id="friends" class="section">
+    <h1><span class="bounce-sentence">MY GO-TO PERSON౨ৎ ⋆｡˚</span></h1>
+    <h2>🏫👫 the friends who made school unforgettable<3</h2>
+    <div class="image-row">
+      <img src="kawan1.jpg" alt="kawan1">
+      <img src="school4.jpg" alt="school4">
+      <img src="school1.jpg" alt="school1">
+    </div>
+    <p>High school friends hold a special place in my heart since we have known each other for over 10 years, and this section is dedicated to the amazing people who have shared some of the most unforgettable moments of my teenage years. From laughing over silly jokes in class to supporting each other through exams and life challenges, these friendships have shaped who I am today.
+       The memories we created together whether in school hallways, during outings, or through late-night chats are priceless. This space is a small tribute to the bonds that continue to stay strong, even as we grow and move forward in life.</p>
+
+
+    <h2>🎓👩‍🎓 partners in assignments, laughter, and late nights<3</h2>
+    <div class="image-row">
+      <img src="kawan2.jpg" alt="kawan2">
+      <img src="uni3.jpg" alt="uni3">
+      <img src="uni2.jpg" alt="uni2">
+      <img src="uni4.jpg" alt="uni4">
+    </div>
+    <p>One of the best parts of my university life has been the amazing friends I’ve made along the way. They’ve been with me through every step, from stressful group projects and late-night study sessions to spontaneous food trips and endless laughter in between classes. 
+       Each of them brings something special into my life, and together, we’ve created unforgettable memories that I’ll always treasure. Their support, humor, and kindness have made my university journey not only easier but so much more meaningful and fun.</p>
+
+  
+</div>
+
+ 
+ <footer style="text-align:center; padding: 10px; background-color:#FFCDB2; color:#7C444F;">
+
+  <!-- Visitor Counter from freevisitorcounters.com -->
+  <a href="https://www.free-counters.org/" target="_blank" style="color:#7C444F; text-decoration:none;">free-Counters.org</a>
+  <script type="text/javascript" src="https://www.freevisitorcounters.com/auth.php?id=ec4cdf85ed3b53f67e3f484275e94bc1bebea6fa"></script>
+  <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1341013/t/0"></script>
+
+  <p>This Website is developed for IMD318 Individual Assignment.</p>
+</footer>
+
+  <script>
+    function showSection(id) {
+      const allSections = document.querySelectorAll('.section');
+      allSections.forEach(section => {
+        section.classList.remove('active');
+      });
+      const target = document.getElementById(id);
+      if (target) {
+        target.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>
